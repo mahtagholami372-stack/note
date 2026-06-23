@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-Keaper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="test.css" >
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
+</head>
+<body>
+   <div class="flex gap-4  items-center mx-4  justify-center">
+<div class="main-container  ">
+   <div class=" today1 flex bg-linear-gradient(125deg, #98B9F2,#CAE5FF 20%) w-[300px] h-[300px] rounded-[30px] color:#1E3888     text-center justify-center  font-xl">
+     <h2>Saturday</h2>
+     <div class="open-modal bg-#1E3888 w-[50px] h-[50px] rounded-[80px] flex text-center items-center justify-center mt-[200px] ml-[95px]">
+      <h2 class="plus color:white font-xl">+</h2>
+      </div>
+   </div>
+    <div class="today2  font-xl   flex bg-linear-gradient(125deg, #B79CED,#DEC0F1 20%) w-[300px] h-[200px] color:#540D6E text-center justify-center mb-[10px]">
+       <h2>Sunday</h2>
+       <div class="open-modal bg-#1E3888 w-[50px] h-[50px] rounded-[80px] flex text-center items-center justify-center mt-[200px] ml-[95px]">
+      <h2 class="plus color:white font-xl">+</h2>
+       </div>
+    </div>
+</div>
+
+<div class="main-container  mt-[5rem] ">
+   <div class=" today1 flex bg-linear-gradient(125deg, #98B9F2,#CAE5FF 20%) w-[300px] h-[300px] rounded-[30px] color:#1E3888     text-center justify-center  font-xl">
+     <h2>Monday</h2>
+     <div class="open-modal bg-#1E3888 w-[50px] h-[50px] rounded-[80px] flex text-center items-center justify-center mt-[200px] ml-[95px]">
+      <h2 class="plus color:white font-xl">+</h2>
+      </div>
+   </div>
+    <div class="today2  font-xl   flex bg-linear-gradient(125deg, #B79CED,#DEC0F1 20%) w-[300px] h-[300px] color:#540D6E text-center justify-center mb-[10px]">
+       <h2>Tuesday</h2>
+       <div class="open-modal bg-#1E3888 w-[50px] h-[50px] rounded-[80px] flex text-center items-center justify-center mt-[200px] ml-[95px]">
+      <h2 class="plus color:white font-xl">+</h2>
+       </div>
+    </div>
+   
+</div>
+<div class="main-container  mb-[10px] ">
+   <div class=" today1 flex bg-linear-gradient(125deg, #98B9F2,#CAE5FF 20%) w-[300px] h-[300px] rounded-[30px] color:#1E3888     text-center justify-center  font-xl">
+     <h2>Friday</h2>
+     <div class="open-modal bg-#1E3888 w-[50px] h-[50px] rounded-[80px] flex text-center items-center justify-center mt-[200px] ml-[95px]">
+      <h2 class="plus color:white font-xl">+</h2>
+      </div>
+   </div>
+   <div class="today3  mb-[30px]   font-xl  flex rounded-[30px] justify-center text-center w-[300px] h-[300px] bg-linear-gradient(355deg, #EE4266,white 100%) color: #EE4266;">
+         <h2>Wendsday</h2>
+         <div class="open-modal bg-#1E3888 w-[50px] h-[50px] rounded-[80px] flex text-center items-center justify-center mt-[200px] ml-[95px]">
+          <h2 class="plus color:white font-xl">+</h2>
+         </div>
+   </div>
+</div>
+</div>
+<div id="myModal" class="modal">
+    <div class="modal-content"></div>
+    <button class="close-button">&times;</button>
+     <div class="hame">
+        <div class="input-box">
+            <span>Title</span>
+         <input class="result" type="text">  
+           <span>Date</span>
+        <input class="pdate" type="text"> 
+           <span>clock</span>
+        <input class="ptime" type="text"> 
+        <h3 id="modal-msg"></h3>
+        <p id="modal-error" style="color: red; display: none;"></p>
+        <button class="sub" type="submit">submit </button>
+        </div>
+     </div> 
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/persian-date@1.1.0/dist/persian-date.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
+<script src="note.js"></script>
+</body>
+</html>

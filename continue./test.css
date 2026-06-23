@@ -1,0 +1,198 @@
+ @font-face {
+  font-family: 'Vazir';
+  src: url('Vazir.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('Vazir-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.main-container{
+    background-color: transparent;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+     align-items: center;
+     border: 2px solid gray;
+  
+    margin: auto;
+    gap: 20px;
+    width: fit-content;
+    border-radius: 50px;
+    font-family: "Vazir", sans-serif;
+    text-align: center;
+    overflow-y: auto;
+    flex-direction: column; 
+    min-height: 47rem;  
+}
+
+
+
+.today1{
+   display: flex;
+   background:linear-gradient(125deg, #98B9F2,#CAE5FF 20%);
+   width: 300px;
+   height: 300px;
+   border-radius: 30px;
+   color: #1E3888;
+   text-align: center;
+   justify-content: center;
+   font-size: x-large;
+}
+
+.today2{
+   display: flex;
+    background:linear-gradient(125deg, #B79CED,#DEC0F1 20%) ;
+    width: 300px !important;
+    height: 300px !important;
+    border-radius: 30px;
+    color: #540D6E;
+    text-align: center;
+    justify-content: center;  
+     margin-bottom: 10px;
+     font-size:x-large ; 
+}
+.today3{
+  display: flex;
+  border-radius: 30px;
+  text-align: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px ;
+  background:linear-gradient(355deg, #EE4266,white 100%) ;
+  margin-bottom: 30px;
+  font-size: x-large;
+  color: #EE4266;
+}
+
+
+
+.open-modal {
+  background-color:transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin-left:95px ;
+}
+.plus{
+  color: white;
+  font-size: xx-large;
+}
+
+.open-modal .today3{
+  
+  width: 50px;
+  height: 50px;
+  border-radius: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+.modal{
+   display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 15px;
+}
+.close-button {
+    display: flex;
+    margin-bottom: 350px;
+    display: flex;
+    cursor: pointer;
+    color: #5C9EAD;
+    font-size: 22px;
+    font-weight: bold;
+    z-index: 1000;
+    
+}
+.open-modal .today1 {
+    background:#5C9EAD;
+    color: #a31621;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Vazir", sans-serif;
+    font-size: 1.1rem;
+    width: 50px;
+    height: 50px;
+}
+.sub {
+ font-size: 1.1rem;
+ padding: 10px;
+ display: flex;
+ width: 100px;
+  height: 60px;
+  background-color: #CAE5FF;
+  border-radius: 10px;
+  margin-left: 80px;
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Vazir",sans-serif;
+}
+.hame{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 500px;
+  height: 400px;
+  background-color: white;
+   box-sizing: border-box;
+   flex-direction: column;
+   border-radius: 8px;
+}
+.hame input[type="text"],
+.hame input[type="date"],
+.hame input[type="time"]{
+  font-family: "Vazir",sans-serif;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  border: 3px solid darkblue;
+  border-radius: 8px;
+  padding: 12px 15px;
+
+}
+#modal-msg{
+    position: fixed;
+    top: 800px;
+    right: 20px;
+    background: #C1DBE3;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: none;
+    z-index: 2000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: modal-msg 2.5s ;
+   
+}
+@keyframes modal-msg {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
