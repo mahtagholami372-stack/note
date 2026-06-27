@@ -13,16 +13,33 @@
   font-style: normal;
   font-display: swap;
 }
+
+.total{
+
+    gap: 50px;
+    max-width: 68rem;
+    margin-left: 25rem;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin-top: 10rem;
+    flex-direction: row;
+
+}
+
+
 .main-container{
     background-color: transparent;
     display: flex;
     padding: 16px;
-    justify-content: center;
+    gap: 3px;
+    justify-content: space-between;
+
      align-items: center;
      border: 2px solid gray;
-  
+     gap: 3px;
     margin: auto;
-    gap: 20px;
+    
     width: fit-content;
     border-radius: 50px;
     font-family: "Vazir", sans-serif;
@@ -44,6 +61,7 @@
    text-align: center;
    justify-content: center;
    font-size: x-large;
+   position: relative;
 }
 
 .today2{
@@ -57,6 +75,7 @@
     justify-content: center;  
      margin-bottom: 10px;
      font-size:x-large ; 
+     position: relative;
 }
 .today3{
   display: flex;
@@ -69,6 +88,7 @@
   margin-bottom: 30px;
   font-size: x-large;
   color: #EE4266;
+  position: relative;
 }
 
 
@@ -87,6 +107,9 @@
 .plus{
   color: white;
   font-size: xx-large;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
 }
 
 .open-modal .today3{
@@ -195,4 +218,41 @@
     opacity: 1;
   }
   
+}
+
+
+ul li {
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: flex-start;
+  padding: 5px;
+    color: #023618;
+    font-size: 1.1rem;
+     margin-left:35px;
+    white-space: nowrap; 
+      font-family: "Vazir",sans-serif;
+  font-size: medium;
+  display: flex;
+  direction: rtl;
+}
+.h22{
+  position: absolute;
+  left: 10px;
+  padding: 0;
+
+}
+.list{
+  display: flex;
+  text-align: right;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  margin-top: 20px;
+  margin-left:35px;
+  flex-direction: column;
+}
+ul li input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
 }
