@@ -123,6 +123,67 @@ $(".ptime").pDatepicker({
 });
 
 
+const box=document.querySelectorAll(".today1, .today2, .today3")
+let drag=null
+box.forEach(r =>{
+    r.setAttribute("draggable", "true")
+    r.addEventListener("dragstart",function(){
+        drag=this
+        drag.classList.add("shoot")
+    })
+    r.addEventListener("dragover",function(e){
+        e.preventDefault()
+    })
+    r.addEventListener("drop",function(){
+        if(drag && drag!==this){
+            const dragTask=drag.querySelector(".list")
+            const thisTask=this.querySelector(".list")
+            if(dragTask && thisTask){
+                const tempHTML=dragTask.innerHTML
+                dragTask.innerHTML=thisTask.innerHTML
+                thisTask.innerHTML=tempHTML
+            }
+            let dragclass=drag.classList
+            let thisclass=this.classList
+            dragclass.forEach(item =>{
+                if(item.startsWith("today")) dragclass=item
+            })
+            thisclass.forEach(item =>{
+                if(item.startsWith("today")) thisclass=item
+            })
+            if(dragclass && thisclass){
+                drag.classList.remove(dragclass)
+                drag.classList.add(thisclass)
+                this.classList.remove(thisclass)
+                this.classList.add(dragclass)
+            }
+            setTimeout(function(){
+                if(drag) drag.classList.remove("shoot")
+            },500)
+        }
+        drag=null
+    })
+      r.addEventListener("dragend",function(){
+            if(drag)drag.classList.remove("shoot")
+                drag=null
+        })
+})
+
+
+const toggleBtn=document.querySelector(".toggle")
+const circleBtn=document.querySelector(".circle")
+
+toggleBtn.addEventListener("click",function(){
+    document.body.classList.toggle("dark-mode")
+    if(document.body.classList.contains("dark-mode")){
+        toggleBtn.textContent="☀️"
+    }
+    else{
+        toggleBtn.textContent="🌙"
+    }
+})
+
+
 
 
 
