@@ -6,22 +6,40 @@
   <title>Note-Keaper</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="all.css">
   <link rel="stylesheet" href="https://unpkg.com/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
   <link rel="stylesheet" href="https://unpkg.com/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
 </head>
 <body>
-  <div class="total">
+
+
+  <div class="flex justify-between  py-4 px-3 ">
+    <i class="fa-solid fa-magnifying-glass ml-3 mt-2"></i>
+     <input type="text" placeholder="Search" class="search-input  flex   mr-18   text-center justify-center items-center bg-gray-border-solid-border-10   ">
+  <div class="toggle">
+    <div class="circle">☀️</div>
+  </div>
+  </div>
+  <main class="flex justify-around mt-5">
+    <aside class="w-96 bg-blue-50 mx-5 rounded-[10px]">
+      <nav>
+        <ul>
+          <li></li>
+        </ul>
+      </nav>
+    </aside>
+  <div class="total px-4">
     <div class="main-container flex flex-col items-center ">
-      <div class="today1 flex bg-linear-gradient(125deg, #98B9F2,#CAE5FF 20%) w-[300px] h-[300px] rounded-[30px] color:#1E3888 text-center justify-center font-xl">
+      <div  class="today1 flex bg-linear-gradient(125deg, #98B9F2,#CAE5FF 20%) w-[300px] h-[300px] rounded-[30px] color:#1E3888 text-center justify-center font-xl">
         <h2 class="h22">Saturday</h2>
-        <ul class="list"></ul>
+        <ul  class="list"></ul>
         <div class="plus color:white font-xl">+</div>
         <div class="open-modal bg-#1E3888 w-[50px] h-[50px] rounded-[80px] flex text-center items-center justify-center mt-[200px] ml-[95px]"></div>
       </div>
 
       <div class="today2 font-xl flex bg-linear-gradient(125deg, #B79CED,#DEC0F1 20%) w-[300px] h-[300px] rounded-[30px] color:#540D6E text-center justify-center">
         <h2 class="h22">Sunday</h2>
-        <ul class="list"></ul>
+        <ul  class="list"></ul>
         <div class="plus color:white font-xl">+</div>
         <div class="open-modal bg-#1E3888 w-[50px] h-[50px] rounded-[80px] flex text-center items-center justify-center mt-[200px] ml-[95px]"></div>
       </div>
@@ -30,14 +48,14 @@
     <div class="main-container flex flex-col items-center !gap-3">
       <div class="today1 flex bg-linear-gradient(125deg, #98B9F2,#CAE5FF 20%) w-[300px] h-[300px] rounded-[30px] color:#1E3888 text-center justify-center font-xl">
         <h2 class="h22">Monday</h2>
-        <ul class="list"></ul>
+        <ul  class="list"></ul>
         <div class="plus color:white font-xl">+</div>
         <div class="open-modal bg-#1E3888 w-[50px] h-[50px] rounded-[80px] flex text-center items-center justify-center mt-[200px] ml-[95px]"></div>
       </div>
 
       <div class="today2 font-xl flex bg-linear-gradient(125deg, #B79CED,#DEC0F1 20%) w-[300px] h-[300px] rounded-[30px] color:#540D6E text-center justify-center">
         <h2 class="h22">Tuesday</h2>
-        <ul class="list"></ul>
+        <ul  class="list"></ul>
         <div class="plus color:white font-xl">+</div>
         <div class="open-modal bg-#1E3888 w-[50px] h-[50px] rounded-[80px] flex text-center items-center justify-center mt-[200px] ml-[95px]"></div>
       </div>
@@ -46,19 +64,21 @@
     <div class="main-container flex flex-col items-center !gap-3">
       <div class="today1 flex bg-linear-gradient(125deg, #98B9F2,#CAE5FF 20%) w-[300px] h-[300px] rounded-[30px] color:#1E3888 text-center justify-center font-xl">
         <h2 class="h22">Friday</h2>
-        <ul class="list"></ul>
+        <ul  class="list"></ul>
         <div class="plus color:white font-xl">+</div>
         <div class="open-modal bg-#1E3888 w-[50px] h-[50px] rounded-[80px] flex text-center items-center justify-center mt-[200px] ml-[95px]"></div>
       </div>
 
       <div class="today3 font-xl flex rounded-[30px] justify-center text-center w-[300px] h-[300px] bg-linear-gradient(355deg, #EE4266,white 100%) color:#EE4266;">
         <h2 class="h22">Wendsday</h2>
-        <ul class="list"></ul>
+        <ul  class="list"></ul>
         <div class="plus color:white font-xl">+</div>
         <div class="open-modal bg-#1E3888 w-[50px] h-[50px] rounded-[80px] flex text-center items-center justify-center mt-[200px] ml-[95px]"></div>
       </div>
     </div>
   </div>
+  </main>
+
 
   <div id="myModal" class="modal">
     <div class="modal-content"></div>
@@ -81,6 +101,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/persian-date@1.1.0/dist/persian-date.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
+  <script src="all.js"></script>
   <script src="note.js"></script>
 </body>
 </html>
