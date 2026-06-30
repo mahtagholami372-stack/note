@@ -281,22 +281,104 @@ ul li input[type="checkbox"] {
     transition: 0.3s;
 }
 body.dark-mode {
-    background-color: #1a1a1a !important;
+    background-color: #121212 !important;
+    color: #EDEDED;
 }
 body.dark-mode .hame{
-    background: #3D3B3C;
+    background: #1E1E1E;
 }body.dark-mode .sub{
-    background-color: #7F7979;
+    background-color: #2A2A2A;
 }
 .search-input{
-  display: flex;
+  display: none;
   justify-content: flex-start;
   align-items: flex-start;
   direction: rtl;
   border: #3D3B3C solid 2px;
   border-radius: 10px;
   margin-right: 89rem;
-  
+  animation: search-input 3s ease;
+}
 
+@keyframes search-input {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
   
+}
+body.dark-mode .searchicon{
+  color: white;
+}
+body.dark-mode .toggle{
+  background-color:#98B9F2 ;
+}
+body.dark-mode .circle{
+  background-color: #FFFFFF;
+}
+
+.dashboard{
+  color: #121212;
+  font-family: "Vazir",sans-serif;
+  font-size: medium;
+  margin-right: 30rem; 
+}
+
+.schedule{
+    color: #121212;
+  font-family: "Vazir",sans-serif;
+  font-size: medium;
+  margin-right: 30rem;
+}
+
+.note{
+    color: #121212;
+  font-family: "Vazir",sans-serif;
+  font-size: medium;
+  margin-right: 30rem;
+
+}
+
+
+.traSh{
+     color: #121212;
+  font-family: "Vazir",sans-serif;
+  font-size: medium;
+  margin-right: 30rem;
+}
+
+
+
+
+.dash{
+  padding: 25px;
+}
+
+.sch{
+  padding: 25px;
+}
+
+.nt{
+  padding: 25px;
+}
+
+
+.trash{
+   padding: 25px;
+}
+
+
+.schedule{
+    color: #121212;
+  font-family: "Vazir",sans-serif;
+  font-size: medium;
+  margin-right: 30rem;
+
+}
+
+.hilight{
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    border: 3px solid #5C9EAD;
 }
