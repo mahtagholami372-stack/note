@@ -183,6 +183,47 @@ toggleBtn.addEventListener("click",function(){
     }
 })
 
+const searchinput=document.querySelector(".search-input")
+const searchBtn=document.querySelector(".searchicon")
+document.addEventListener("click",function(event){
+    if(event.target.closest(".searchicon")){
+          searchinput.style.display="block"
+    }
+
+})
+
+
+const allDays=document.querySelectorAll(".today1, .today2, .today3")
+const weekDays={
+  "Saturday": "today1",
+  "Sunday": "today2",
+  "Monday": "today1",
+  "Tuesday": "today2",
+  "Wednesday": "today3",
+  "Friday": "today1"
+};
+searchinput.addEventListener("input",function(){
+    const searchitem=searchinput.value
+    allDays.forEach(item =>{
+        item.classList.remove("hilight")
+    })
+    if(searchitem){
+        for(const days in weekDays){
+            if(days.includes(searchitem)){
+                const daysbox=weekDays[days]
+                const targetbox=Array.from(allDays).find(item => item.classList.contains(daysbox))
+                if(targetbox){
+                    targetbox.classList.add("hilight")
+                }
+            }
+        }
+    }
+}) 
+const tt=document.querySelector(".not")
+tt.addEventListener("click",function(){
+    window.location.href="note2.html"
+})
+
 
 
 
