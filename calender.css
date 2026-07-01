@@ -1,0 +1,74 @@
+ @font-face {
+  font-family: 'Vazir';
+  src: url('Vazir.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('Vazir-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.calender{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8rem;
+    font-size: xx-large;
+    position: relative;
+}
+.c{
+    position: absolute;
+    left: 10rem;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 7rem;
+    font-size:large;
+}
+
+.hame input[type="date"],
+.hame input[type="time"]{
+  font-family: "Vazir",sans-serif;
+  font-size: small;
+  display: flex;
+  border: 2px solid darkblue;
+  font-size: large;
+ 
+
+}
+
+.pdate{
+  display: flex;
+   width: 9rem;
+   height: 2rem;
+   font-family: "Vazir",sans-serif;
+   border: 2px solid darkblue;
+   border-radius: 2rem;
+   text-align: center;
+   transition: all 0.3s ease;
+}
+.ptime{
+  display: flex;
+   width: 9rem;
+   height: 2rem;
+   font-family: "Vazir",sans-serif;
+   border: 2px solid darkblue;
+   border-radius: 2rem;
+   text-align: center;
+    transition: all 0.3s ease;
+}
+.pdate:hover{
+    transform: scale(1.25);  
+}
+.ptime:hover{
+    transform: scale(1.25);  
+}
